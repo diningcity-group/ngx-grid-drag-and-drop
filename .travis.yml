@@ -1,0 +1,44 @@
+language: node_js
+
+node_js:
+  - lts/*
+
+dist: trusty
+
+sudo: required
+
+addons:
+  apt:
+    sources:
+      - google-chrome
+    packages:
+      - google-chrome-stable
+
+branches:
+  only:
+    - master
+
+before_script:
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start
+
+script:
+  - npm run lint
+  - npm run test:lib
+  - npm run build:lib
+#  - npm run e2e
+  - npm run build:deploy-demo
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: dist/DragAndDropGrid
+  on:
+    branch: master
+
+notifications:
+  email: false
