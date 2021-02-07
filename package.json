@@ -1,7 +1,7 @@
 {
-  "name": "ngx-grid-drag-and-drop",
+  "name": "@diningcity-group/ngx-grid-drag-and-drop",
   "version": "1.0.0",
-  "author": "Bopha Arun",
+  "author": "Diningcity Group",
   "description": "A simple component for using the @angular/cdk drag and drop sort functions with a mixed orientation grid list",
   "repository": {
     "type": "git",
@@ -71,6 +71,6 @@
     "typescript": "~3.4.3"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@diningcity-group"
+    "registry": "https://npm.pkg.github.com/"
   }
 }
