@@ -1,42 +1,40 @@
-# @sam-1994/ngx-drag-and-drop-grid [![Build Status](https://travis-ci.com/sam-1994/ngx-drag-and-drop-grid.svg?branch=master)](https://travis-ci.com/sam-1994/ngx-drag-and-drop-grid)
+- [English](https://github.com/diningcity-group/vue-color-picker#welcome-to-the-vue-color-picker) 
 
-A simple component for using the @angular/cdk drag and drop sort functions with a mixed orientation grid list
+# Welcome to the Vue Color Picker
 
-Currently the package is only tested in combination with Angular 8.x
+This repository is a fork of the awesome @sam-1994/ngx-drag-and-drop-grid.
 
-## Table of Contents
-* [Demo](#demo)
-* [Installation](#installation)
-* [Usage](#usage)
-* [API](#api)
+This drag and drop plug in takes the same features as the previous plug in, but updated with Angular 10+ support.
 
+# Table of contents
 
-## Demo
-https://sam-1994.github.io/ngx-drag-and-drop-grid/
+- [Installing](#installing)
+- [Usage](#usage)
+- [API](#api)
 
-## Installation
+## Installing
 
-First you need to install the npm module:
+To install from the command line:
 
-```sh
-npm install @sam-1994/ngx-drag-and-drop-grid --save
-```
+````shell
+npm install XXXXXXXXXX
+````
 
 ## Usage
 
-#### 1. Import the `SamDragAndDropGridModule`:
+#### 1. Import the `XXXXXXXX`:
 
-Finally, you can use ngx-translate in your Angular project. You have to import `SamDragAndDropGridModule` in the NgModule.
+Finally, you can use ngx-translate in your Angular project. You have to import `XXXXXXXX` in the NgModule.
 
 ```ts
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
-import {SamDragAndDropGridModule} from '@sam-1994/ngx-drag-and-drop-grid';
+import {SamDragAndDropGridModule} from 'XXXXXXXXXXXXX';
 
 @NgModule({
     imports: [
         BrowserModule,
-        SamDragAndDropGridModule
+        XXXXXXXXXXXXXX
     ],
     bootstrap: [AppComponent]
 })
@@ -47,14 +45,14 @@ export class AppModule { }
 
 ```ts
 import {Component, OnInit} from '@angular/core';
-import {SamDragAndDropGridComponent} from 'drag-and-drop-grid-module';
+import {XXXXXXXXXXXXXX} from 'drag-and-drop-grid-module';
 
 @Component({
   selector: 'app-drag-and-drop-grid-example',
   templateUrl: './drag-and-drop-grid.component.html',
   styleUrls: ['./drag-and-drop-grid.component.sass']
 })
-export class SamDragAndDropGridExampleComponent implements OnInit {
+export class XXXXXXXXXXXXXXXXXX implements OnInit {
 
   public list = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
@@ -64,13 +62,13 @@ export class SamDragAndDropGridExampleComponent implements OnInit {
 ```
 
 ```html
-<sam-drag-and-drop-grid [items]="list" [columnNumber]="5">
-  <div *samDragAndDropListData="let listItem; let i=index">
+<XXXXXXXXXXXX [items]="list" [columnNumber]="5">
+  <div *XXXXXXXXXXXXX="let listItem; let i=index">
     Item {{listItem}}; Index {{i}}
   </div>
-</sam-drag-and-drop-grid>
+</XXXXXXXXXX>
 ```
 
 ## API
 
-You can use the `samDragAndDropListData` directive to inject your custom template as grid items.
+You can use the `XXXXXXXXXXX` directive to inject your custom template as grid items.
