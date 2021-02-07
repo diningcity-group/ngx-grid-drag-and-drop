@@ -1,6 +1,6 @@
 - [English](https://github.com/diningcity-group/vue-color-picker#welcome-to-the-vue-color-picker) 
 
-# Welcome to the Vue Color Picker
+# Welcome to the Angular Grid Drag and Drop plug in
 
 This repository is a fork of the awesome @sam-1994/ngx-drag-and-drop-grid.
 
